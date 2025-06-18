@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> 
+  <title>Sense of insecurity in the architectural environment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/customize.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    iframe.full-width-map {
+    width: 100vw;
+    height: 70vh;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    p {
+      font-size: 1.6rem; /* default is 1rem in Skeleton */
+    line-height: 1.6;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Info Section -->
+  <!-- Title and Logo -->
+  <div class="container">
+    <div class="row one-top">
+      <div class="ten columns">
+        <h2 style="font-weight: 550;">Sense of insecurity in the architectural environment</h2>
+      </div>
+      <div class="two columns" style="text-align: right;">
+        <img class="scale-with-grid" src="images/Picture2.png" alt="NTUA Logo">
+      </div>
+    </div>
+
+  <!-- Subtitle and Authors (new full-width row) -->
+    <div class="row half-bottom">
+      <div class="twelve columns">
+        <h3 style="font-weight: 500;">NTUA ARCH 4342 Computational Methods in Creative Arts and Sciences</h3>
+        <h3 style="font-weight: 500;">Anna Maria Vaou, Eirini Kotsifaki, Elena Koutsari</h3>
+
+        </p>
+        <img src="images/gif.gif" class="half-bottom center-image">
+        <p>
+    
+        <p>Our project was inspired by personal experiences, especially the sense of fear often felt when walking alone in public space. This fear, whether real or perceived, shapes how we navigate the urban environment. Motivated by this, we explored how architecture can enhance the feeling of safety and social well-being.</p>
+        <p>We drew upon scientific studies, including a key research project by Dimitra Stamu (NTUA), which collected data from over 900 residents of Athens on their fear of crime, using clustering techniques to identify patterns by demographic and environmental factors. This study helped us reflect on the importance of using such data in architectural design.</p>
+        <p>Guided by these questions, we developed a questionnaire to gather information about lighting and noise in different neighborhoods. We also drew inspiration from previous projects focused on femicide. Our belief is that data reflecting lived experience should not remain solely academic but should actively inform urban design.</p>
+        <p>Our idea was to create an interactive map of Athens that visualizes perceived safety. A character follows the user's cursor across regions and reacts emotionally based on fear levels gathered from our questionnaire. This system becomes a tool for architects, highlighting where interventions (like more lighting or increased human presence) are needed.</p>
+        <p>To offer a more experiential dimension, we developed a simulation in p5.js. A "snake-like" trail moves across the map, changing color, motion, and sound based on fear, noise, and lighting levels in each area. The movement becomes chaotic inside “fear circles” and calmer elsewhere, accompanied by a soundscape that varies with the reported noise. This immersive visualization strengthens our understanding of how people emotionally experience urban safety.</p>
+        <p>Finally, we implemented the questionnaire with an embedded Mapbox map, allowing users to mark exact coordinates of areas they associate with fear. Based on user input, we analyzed which factors contribute to (or undermine) the feeling of safety, turning subjective experience into quantifiable design data.</p>
+        <!-- keep your paragraph content here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Questionnaire Section -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="half-bottom">Questionnaire</h3>
+        <p>
+          Click on the link below to contribute to the survey:<br>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScvA1Ws10nC_r8x0jA1soUmFRgBvyuidsP062N0tB_JiLzeQg/viewform?usp=header" target="_blank">
+            Google Form
+          </a>
+        </p>
+        <img src="images/Picture1.png" alt="Questionnaire Image" class="half-bottom center-image">
+        <p>The questionnaire is designed to collect user perceptions of urban safety at specific locations. Participants are asked to input the geographic coordinates (latitude and longitude) of a place they are familiar with and then evaluate it based on three key factors: lighting at night, ambient noise or activity levels, and the perceived likelihood of criminal activity. Each factor is rated on a 1–5 scale, with clear descriptors (e.g., from “well-lit” to “completely dark,” or from “lively” to “completely silent”). An optional comment box allows respondents to provide additional context about the location. These responses aim to capture subjective feelings of safety and environmental conditions across different areas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map 1 Title -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="half-bottom">Interactive map visualizing the questionnaire data</h3>
+        <p>In each circle of the map, the radius is proportional to the fear scale assessed by each respondent. The density of each black spot is proportional to the darkness and the speed of movement of the white rings is proportional to the noise. Hovering the mouse over each circle displays the relevant comment of each respondent.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map 1 Full-Width -->
+  <iframe class="full-width-map" src="https://editor.p5js.org/elenakoutsari/full/SXoBG5Gm3"></iframe>
+
+  <!-- Map 2 Title -->
+  <div style="height: 40px;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns half-bottom">
+        <h3 class="half-bottom">Interactive map visualizing the sense of insecurity</h3>
+        <p>Click on the map to activate sound. Hover over with the mouse and see what happens...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map 2 Full-Width -->
+  <iframe class="full-width-map" src="https://editor.p5js.org/elenakoutsari/full/rDHRhqeQi"></iframe>
+
+  <!-- Team & Contributions Section -->
+  <div class="container">
+    <div class="row one-top">
+      <div class="twelve columns">
+        <h3>Our Team</h3>
+        <p>We all contributed to every part of the project. However, each one of us played a major role in a different field.</p>
+
+        <h4>Anna Maria Vaou</h4>
+        <p>Anna Maria contributed to the background of architectural theory and the structure of the research. She desinged the flowcharts and created texts that supported the presentation and the final document.</p>
+
+        <h4>Eirini Kotsifaki</h4>
+        <p>Eirini worked on the p5.js sketches, pseudocodes, interaction design, and data integration. She designed the questionnaire as well as the final website. </p>
+
+        <h4>Elena Koutsari</h4>
+        <p>Elena handled the map visualizations, color/sound mappings, and overall project composition. She created the application that accompanies the questionnaire as well as most of the final code.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="container">
+    <div class="row one-bottom center">
+      <div class="twelve columns">
+        <p>© Anna Maria Vaou, Eirini Kotsifaki, Elena Koutsari 2025</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
